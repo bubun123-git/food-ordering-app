@@ -7,8 +7,8 @@ import CartContext from "../Store/Cart.context";
 const HeaderCartButton = (props) => {
    
    const cardCtx= useContext(CartContext)
-   const numberofCartitems = cardCtx.items.reduce( (currentNumber, item)=> {
-    return currentNumber + item.amount
+   const numberofCartitems = cardCtx.items.reduce( (currentNumber, item)=> { // reduce is used because for every kind of meal we stored the amount of meals of that type is part of the cart
+    return currentNumber + item.amount // reduce is a method that allows us to transform an array of data into a single value
    } , 0)
 
     return (
