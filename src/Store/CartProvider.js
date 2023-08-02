@@ -85,4 +85,4 @@ const CartProvider = (props) => {
   );
 };
 
-export default CartProvider
+export default CartProvider;
